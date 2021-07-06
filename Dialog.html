@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SurveyBaba | Dashboard</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Advance Search
+      </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Advance Search</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <select class="form-control" id="LstLayer" onchange="SelectLayer(this)">
+                                <option disabled selected>Select a Layer</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <input id="txtField" class="form-control mt-3" placeholder="field" />
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-4 text-center mt-1"><button class="btn btn-info w-100 btnOPT">=</button></div>
+                                <div class="col-4 text-center mt-1"><button class="btn btn-info w-100 btnOPT">&lt;&gt;</button></div>
+                                <div class="col-4 text-center mt-1"><button class="btn btn-info w-100 btnOPT">Like</button></div>
+                                <div class="col-4 text-center mt-1"><button class="btn btn-info w-100 btnOPT">&gt;</button></div>
+                                <div class="col-4 text-center mt-1"><button class="btn btn-info w-100 btnOPT">&lt;=</button></div>
+                                <div class="col-4 text-center mt-1"><button class="btn btn-info w-100 btnOPT">%</button></div>
+                                <div class="col-4 text-center mt-1"><button class="btn btn-info w-100 btnOPT">&lt;</button></div>
+                                <div class="col-4 text-center mt-1"><button class="btn btn-info w-100 btnOPT">&lt;=</button></div>
+                                <div class="col-4 text-center mt-1"><button class="btn btn-info w-100 btnOPT">Not</button></div>
+                                <div class="col-6 text-center mt-1"><button class="btn btn-info w-100 btnOPT">And</button></div>
+                                <div class="col-6 text-center mt-1"><button class="btn btn-info w-100 btnOPT">Or</button></div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <textarea class="form-control" id="txtResult"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" onclick="Clear()">Clear</button>
+                    <button type="button" class="btn btn-primary">Apply</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge('uibutton', $.ui.button)
+    </script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+
+    <script src="script/common.js"></script>
+
+</body>
+
+<script>
+    function SelectLayer(event) {
+        var Layer = $(event).val();
+        $("#txtField").val(Layer);
+        $("#txtResult").val(Layer);
+    }
+
+    $(document).on('click', '.btnOPT', function() {
+        debugger
+        var val = this.textContent;
+        var result = $("#txtResult").val();
+        result = result + val;
+        $("#txtResult").val(result);
+    })
+
+    function Clear() {
+        $("#txtResult").val("");
+        $("#txtField").val("");
+        $("#LstLayer").val("");
+    }
+</script>
+
+</html>
