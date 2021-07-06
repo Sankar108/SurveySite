@@ -1,0 +1,148 @@
+.w-fit {
+    width: fit-content;
+}
+
+.card {
+    cursor: pointer;
+}
+
+ul.NoListstyle {
+    list-style: none;
+}
+
+ul.NoListstyle li {
+    margin-top: 15px;
+}
+
+.question {
+    padding: 15px 40px;
+}
+
+input[type="checkbox"]:checked+label::before,
+input[type="radio"]:checked+label::before {
+    opacity: 1;
+    border-color: #2258c4 !important;
+    background: #d0ecf5 !important;
+    transform: scale(1) !important;
+    color: white !important;
+}
+
+
+/* Login index Sign up */
+
+.margin-top {
+    margin-top: 10rem;
+}
+
+.signin-image {
+    height: 100%;
+    max-width: 100%;
+}
+
+.social-icon {
+    border: 1px solid #d0d2d3;
+    box-sizing: content-box;
+    flex-basis: 25%;
+    height: 24px;
+    margin: 0 2px;
+    transition: .2s background-color ease-in-out;
+    text-align: center;
+    border-radius: 2px;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    background-color: white;
+}
+
+.wds-container {
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.UCSImg {
+    margin: auto;
+    height: 150px;
+}
+
+.LogPanel {
+    background-color: #eaecec;
+    font-size: 0.9rem;
+}
+
+.or-divider {
+    border-top: 1.5px solid #fff;
+    border-bottom: 1.5px solid #fff;
+    height: 0;
+}
+
+.or-bubble {
+    background-color: #fff;
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+    position: relative;
+    text-align: center;
+    height: 40px;
+    border-radius: 20px;
+    line-height: 40px;
+    font-weight: 500;
+    overflow: show;
+}
+
+.anychart-credits {
+    display: none !important;
+}
+
+.col-md-2,
+.col-md-3,
+.col-md-5,
+.col-md-4,
+.col-md-6,
+.col-md-8,
+.col-md-12,
+.col-6 {
+    margin-top: 10px;
+}
+
+.card-body {
+    min-height: 50px;
+    background-color: white;
+}
+
+.error {
+    color: red;
+    font-weight: normal;
+}
+
+label {
+    margin-bottom: .3rem !important;
+}
+
+
+/* Login index Sign up */
+
+
+/* Footer */
+
+footer {
+    margin-top: 15px;
+    background-color: black;
+    color: orange;
+    padding: 15px;
+}
+
+.footerSubmenu {
+    list-style: none;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+.footerSubmenu li {
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.footerSubmenu li:hover {
+    color: white;
+}

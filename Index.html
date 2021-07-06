@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SurveyBaba | Dashboard</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+
+    <style>
+        .slideImage {
+            max-height: 70vh;
+        }
+        
+        #carouselControls {
+            padding-top: 80px;
+        }
+    </style>
+
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+        <!-- topbar-------------------------------- -->
+        <div id="mySidenav" class="sidenav">
+            <img id="profileimg" src="Images/profile.png" alt="Profile">
+            <div class="dropdown submenu">
+                <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true">
+                    Rajbir
+                </button>
+                <div class="dropdown-menu">
+                    <a class="_dropdown-item" href="UserProfile.html">Administrator</a>
+                </div>
+            </div>
+            <div id="mobilemenu">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Product</a>
+                <a href="#">Solution</a>
+                <a href="#">Resources</a>
+                <a href="#">Plan & Pricing</a>
+            </div>
+        </div>
+        <span id="toggleMenu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+        <div class="fixed_header">
+            <div id="topbar">
+                <img src="images/surveylogo.jpeg" id="surveylogo">
+
+                <nav>
+                    <ul class="menu-list">
+                        <li class="menu-list-item active">
+                            <div class="btn-group">
+                                <a href="#" class="dropdown-toggle mainmenu" data-toggle="dropdown">Product</a>
+                                <div class="dropdown-menu">
+                                    <table class="tblmenu">
+                                        <tr>
+                                            <td class="iconCell"><i class="fa fa-check-circle menuIcon"></i></td>
+                                            <td><a class="dropdown-item" href="#">Surveybaba.com – (SAS based  Survey Platform)</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="iconCell"><i class="fa fa-bars menuIcon"></i></td>
+                                            <td><a class="dropdown-item" href="#">Onsite Deployment of  Survey Platform – (Rental)
+                                            </a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="iconCell"><i class="fa fa-sticky-note menuIcon"></i></td>
+                                            <td><a class="dropdown-item" href="#">GIS Enabled Survey Project Implementation</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="iconCell"><i class="fa fa-sticky-note menuIcon"></i></td>
+                                            <td><a class="dropdown-item" href="#">Enterprise GIS Applications
+                                            </a></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-list-item">
+                            <div class="btn-group">
+                                <a href="#" class="dropdown-toggle mainmenu" data-toggle="dropdown">Solution</a>
+                                <div class="dropdown-menu">
+                                    <table class="tblmenu">
+                                        <tr>
+                                            <td class="iconCell"><i class="fa fa-comment menuIcon"></i></td>
+                                            <td><a class="dropdown-item" href="#">Forms</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="iconCell"><i class="fa fa-map menuIcon"></i></td>
+                                            <td>
+                                                <a class="dropdown-item" href="#">GIS Survey</a></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-list-item">
+                            <a href="#" class="dropdown-toggle mainmenu" data-toggle="dropdown">
+                                Resources
+                            </a>
+                            <div class="dropdown-menu">
+                                <table class="tblmenu">
+                                    <tr>
+                                        <td class="iconCell"><i class="fa fa-sticky-note menuIcon"></i></td>
+                                        <td><a class="dropdown-item" href="#">Templates</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="iconCell"><i class="fa fa-users menuIcon"></i></td>
+                                        <td>
+                                            <a class="dropdown-item" href="#">User Guides</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="menu-list-item">
+                            <a href="#" class="mainmenu" data-toggle="dropdown">Plan & Pricing</a>
+                        </li>
+
+                        <li class="menu-list-item info float-right m-r-10">
+                            <a href="#" class="mainmenu">En</a>
+                        </li>
+                        <li class="menu-list-item float-right">
+                            <a href="#" class="mainmenu">Sign up</a>
+                        </li>
+                        <li class="menu-list-item float-right">
+                            <a href="#" class="mainmenu">Login</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <span class="topLeftinfo">
+                    <h1>Land Survey</h1>
+                    <button class="btn btn-primary btn-sm">SIGN UP FREE</button>
+                </span>
+                <span class="bootomRightInfo">
+                    <p class="text-center">Land Parcel Mapping <br>Integrated with <br>DGCL and Total Station</p>
+                </span>
+                <img class="d-block w-100 slideImage" src="images/LandSurvey.jpg" data-slide-to="2">
+            </div>
+            <div class="carousel-item">
+                <span class="topLeftinfo">
+                    <h1>Land Survey</h1>
+                    <button class="btn btn-primary btn-sm">SIGN UP FREE</button>
+                </span>
+                <span class="bootomRightInfo">
+                    <p class="text-center">Land Parcel Mapping <br>Integrated with <br>DGCL and Total Station</p>
+                </span>
+                <img class="d-block w-100 slideImage" src="images/GISSurvey.jpg" data-slide-to="2">
+            </div>
+            <div class="carousel-item">
+                <span class="topLeftinfo">
+                    <h1>Product Survey</h1>
+                    <button class="btn btn-primary btn-sm">SIGN UP FREE</button>
+                </span>
+                <span class="bootomRightInfo">
+                    <p class="text-center">Land Parcel Mapping <br>Integrated with <br>DGCL and Total Station</p>
+                </span>
+                <img class="d-block w-100 slideImage" src="images/GPSSurvey.jpg" data-slide-to="2">
+            </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+    <footer>
+        <div class="container">
+
+            <div class="row text-center">
+                <div class="col-md-2">
+                    <h5>Community</h5>
+                    <ul class="footerSubmenu">
+                        <li>Developers</li>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>LinkedIn</li>
+                        <li>Our Blog</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>About Us</h5>
+                    <ul class="footerSubmenu">
+                        <li>Leadership team</li>
+                        <li>Board of Directors</li>
+                        <li>Investor Relation</li>
+                        <li>App Directory</li>
+                        <li>NewsRooms</li>
+                        <li>Office Rooms</li>
+                        <li>Sitemap</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>Policies</h5>
+                    <ul class="footerSubmenu">
+                        <li>Terms of Use team</li>
+                        <li>Privacy Notice</li>
+                        <li>California Privacy Notice</li>
+                        <li>Security Statement</li>
+                        <li>Acceptable Uses Policy</li>
+                    </ul>
+
+                </div>
+                <div class="col-md-6">
+                    <h5>Use cases</h5>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <ul class="footerSubmenu">
+                                <li>online Polls</li>
+                                <li>Facebook Survey</li>
+                                <li>Survey Template</li>
+                                <li>Google Forms</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <ul class="footerSubmenu">
+                                <li>online Polls</li>
+                                <li>Facebook Survey</li>
+                                <li>Survey Template</li>
+                                <li>Google Forms</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <ul class="footerSubmenu">
+                                <li>online Polls</li>
+                                <li>Facebook Survey</li>
+                                <li>Survey Template</li>
+                                <li>Google Forms</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="#" class="circle"><i class="fa fa-facebook-circle"></i></a>
+                    <a href="#" class="circle"><i class="fa fa-twitter"></i></a>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    @2021 Surveybaba Platform | +91 9374073600
+                </div>
+                <div class="col-md-2">Sitemap</div>
+                <div class="col-md-3">Privacy Statement</div>
+                <div class="col-md-2">Terms of Use </div>
+            </div>
+
+            <small class="text-center mt-3" style="display: block;">
+                Net Promoter, Net Promoter system, Net Promoter Score, NPS and NPS-related emoticons <br />are registered trademarks of Bain Company Inc.
+            </small>
+        </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge('uibutton', $.ui.button)
+    </script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+
+    <script src="script/common.js"></script>
+
+</body>
+
+</html>
