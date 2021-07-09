@@ -1,4 +1,4 @@
-.hide {
+    .hide {
     display: none;
 }
 
@@ -560,3 +560,89 @@ a.mainmenu:hover {
     text-align: center;
     margin-top: 30px;
 }
+
+.contentImg {
+    width: 80%;
+    transition: all 1s ease-in-out;
+    max-height: 300px;
+}
+
+.contentImg:hover {
+    transform: scale(1.1);
+}
+
+.section2_box1 {
+    display: flex;
+    width: 220px;
+    height: 220px;
+    border-radius: 100%;
+    text-align: left;
+    background: #bdd7ee;
+    color: #242f51;
+    font-size: 25px;
+    font-family: 'Poppins-SemiBold';
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    float: left;
+}
+
+.section2_box2 {
+    display: inline-block;
+    width: 150px;
+    margin: 10px;
+}
+
+.section2 {
+    padding: 50px 0;
+    background: #f7f8fa;
+}
+
+.section2_heading {
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.section2_heading h2 {
+    color: #242f51;
+    font-size: 36px;
+    font-family: 'Poppins-SemiBold';
+}
+
+.section2_boxes_area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.section2_box1 {
+    display: flex;
+    width: 220px;
+    height: 220px;
+    border-radius: 100%;
+    text-align: left;
+    background: linear-gradient(90deg, rgb(14, 11, 71) 0%, rgb(20, 20, 151) 35%, rgb(8, 183, 218) 100%);
+    color: orange;
+    font-size: 25px;
+    font-family: 'Poppins-SemiBold';
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    float: left;
+}
+
+.section2_box2 img {
+    max-width: 100%;
+}
+
+body {
+    font-family: "Segoe UI Webfont", -apple-system, "Helvetica Neue", "Lucida Grande", "Roboto", "Ebrima", "Nirmala UI", "Gadugi", "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", "Tunga", "Lao UI", "Raavi", "Iskoola Pota", "Latha", "Leelawadee", "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
