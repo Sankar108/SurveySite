@@ -15,6 +15,15 @@
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/common.css" rel="stylesheet">
 
+    <style>
+        #tblIcon tr td {
+            padding: 5px;
+        }
+        
+        .fIcon {
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -24,7 +33,7 @@
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Advance Search</h5>
@@ -43,10 +52,11 @@
                                 <option value="4">4</option>
                                 <option value="5">5</option>
                             </select>
-                            <input id="txtField" class="form-control mt-3" placeholder="field" />
                         </div>
-
-                        <div class="col-md-12">
+                        <div class="col-md-4">
+                            <input id="txtField" class="form-control mt-1" placeholder="field" />
+                        </div>
+                        <div class="col-md-4">
                             <div class="row">
                                 <div class="col-4 text-center mt-1"><button class="btn btn-info w-100 btnOPT">=</button></div>
                                 <div class="col-4 text-center mt-1"><button class="btn btn-info w-100 btnOPT">&lt;&gt;</button></div>
@@ -61,16 +71,313 @@
                                 <div class="col-6 text-center mt-1"><button class="btn btn-info w-100 btnOPT">Or</button></div>
                             </div>
                         </div>
-
+                        <div class="col-md-4">
+                            <select class="form-control mt-1">
+                            </select>
+                        </div>
                         <div class="col-md-12">
                             <textarea class="form-control" id="txtResult"></textarea>
                         </div>
                     </div>
+
+                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#IconeModal">
+                        More Icons
+                    </button>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-secondary" onclick="Clear()">Clear</button>
                     <button type="button" class="btn btn-primary">Apply</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Icon Modal -->
+    <div class="modal fade" id="IconeModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Select Icon</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="card">
+                                <table id="tblIcon">
+                                    <tr>
+                                        <td><i class="fIcon fa fa-address-book" alt="fa-address-book"></i></td>
+                                        <td><i class="fIcon fa fa-address-book-o" alt="fa-address-book-o"></i></td>
+                                        <td><i class="fIcon fa fa-address-card" alt="fa-address-card"></i></td>
+                                        <td><i class="fIcon fa fa-address-card-o" alt="fa-address-card-o"></i></td>
+                                        <td><i class="fIcon fa fa-adjust" alt="fa-adjust"></i></td>
+                                        <td><i class="fIcon fa fa-american-sign-language-interpreting" alt="fa-american-sign-language-interpreting"></i></td>
+                                        <td><i class="fIcon fa fa-anchor" alt="fa-anchor"></i></td>
+                                        <td><i class="fIcon fa fa-archive" alt="fa-archive"></i></td>
+                                        <td><i class="fIcon fa fa-area-chart" alt="fa-area-chart"></i></td>
+                                        <td><i class="fIcon fa fa-assistive-listening-systems" alt="fa-assistive-listening-systems"></i></td>
+                                        <td><i class="fIcon fa fa-asterisk" alt="fa-asterisk"></i></td>
+                                        <td><i class="fIcon fa fa-at" alt="fa-at"></i></td>
+                                        <td><i class="fIcon fa fa-audio-description" alt="fa-audio-description"></i></td>
+                                        <td><i class="fIcon fa fa-balance-scale" alt="fa-balance-scale"></i></td>
+                                        <td><i class="fIcon fa fa-ban" alt="fa-ban"></i></td>
+                                        <td><i class="fIcon fa fa-bank" alt="fa-bank"></i></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fIcon fa fa-bars" alt="fa-bars"></i></td>
+                                        <td><i class="fIcon fa fa-bath" alt="fa-bath"></i></td>
+                                        <td><i class="fIcon fa fa-battery-empty" alt="fa-battery-empty"></i></td>
+                                        <td><i class="fIcon fa fa-battery-full" alt="fa-battery-full"></i></td>
+                                        <td><i class="fIcon fa fa-battery-half" alt="fa-battery-half"></i></td>
+                                        <td><i class="fIcon fa fa-battery-quarter" alt="fa-battery-quarter"></i></td>
+                                        <td><i class="fIcon fa fa-battery-three-quarters" alt="fa-battery-three-quarters"></i></td>
+                                        <td><i class="fIcon fa fa-bed" alt="fa-bed"></i></td>
+                                        <td><i class="fIcon fa fa-beer" alt="fa-beer"></i></td>
+                                        <td><i class="fIcon fa fa-bell" alt="fa-bell"></i></td>
+                                        <td><i class="fIcon fa fa-bell-slash" alt="fa-bell-slash"></i></td>
+                                        <td><i class="fIcon fa fa-binoculars" alt="fa-binoculars"></i></td>
+                                        <td><i class="fIcon fa fa-birthday-cake" alt="fa-birthday-cake"></i></td>
+                                        <td><i class="fIcon fa fa-blind" alt="fa-blind"></i></td>
+                                        <td><i class="fIcon fa fa-bolt" alt="fa-bolt"></i></td>
+                                        <td><i class="fIcon fa fa-bomb" alt="fa-bomb"></i></td>
+                                        <td><i class="fIcon fa fa-book" alt="fa-book"></i></td>
+                                        <td><i class="fIcon fa fa-bookmark-o" alt="fa-bookmark-o"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fIcon fa fa-briefcase" alt="fa-briefcase"></i></td>
+                                        <td><i class="fIcon fa fa-bug" alt="fa-bug"></i></td>
+                                        <td><i class="fIcon fa fa-building" alt="fa-building"></i></td>
+                                        <td><i class="fIcon fa fa-building-o" alt="fa-building-o"></i></td>
+                                        <td><i class="fIcon fa fa-bullhorn" alt="fa-bullhorn"></i></td>
+                                        <td><i class="fIcon fa fa-bullseye" alt="fa-bullseye"></i></td>
+                                        <td><i class="fIcon fa fa-bus" alt="fa-bus"></i></td>
+                                        <td><i class="fIcon fa fa-cab" alt="fa-cab"></i></td>
+                                        <td><i class="fIcon fa fa-calculator" alt="fa-calculator"></i></td>
+                                        <td><i class="fIcon fa fa-calendar" alt="fa-calendar"></i></td>
+                                        <td><i class="fIcon fa fa-camera" alt="fa-camera"></i></td>
+                                        <td><i class="fIcon fa fa-camera-retro" alt="fa-camera-retro"></i></td>
+                                        <td><i class="fIcon fa fa-car" alt="fa-car"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fIcon fa fa-cart-plus" alt="fa-cart-plus"></i></td>
+                                        <td><i class="fIcon fa fa-cc" alt="fa-cc"></i></td>
+                                        <td><i class="fIcon fa fa-certificate" alt="fa-certificate"></i></td>
+                                        <td><i class="fIcon fa fa-check" alt="fa-check"></i></td>
+                                        <td><i class="fIcon fa fa-check-circle" alt="fa-check-circle"></i></td>
+                                        <td><i class="fIcon fa fa-check-circle-o" alt="fa-check-circle-o"></i></td>
+                                        <td><i class="fIcon fa fa-check-square" alt="fa-check-square"></i></td>
+                                        <td><i class="fIcon fa fa-check-square-o" alt="fa-check-square-o"></i></td>
+                                        <td><i class="fIcon fa fa-child" alt="fa-child"></i></td>
+                                        <td><i class="fIcon fa fa-circle" alt="fa-circle"></i></td>
+                                        <td><i class="fIcon fa fa-circle-o" alt="fa-circle-o"></i></td>
+                                        <td><i class="fIcon fa fa-circle-o-notch" alt="fa-circle-o-notch"></i></td>
+                                        <td><i class="fIcon fa fa-circle-thin" alt="fa-circle-thin"></i></td>
+                                        <td><i class="fIcon fa fa-clock-o" alt="fa-clock-o"></i></td>
+                                        <td><i class="fIcon fa fa-clone" alt="fa-clone"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fIcon fa fa-close" alt="fa-close"></i></td>
+                                        <td><i class="fIcon fa fa-cloud" alt="fa-cloud"></i></td>
+                                        <td><i class="fIcon fa fa-cloud-download" alt="fa-cloud-download"></i></td>
+                                        <td><i class="fIcon fa fa-cloud-upload" alt="fa-cloud-upload"></i></td>
+                                        <td><i class="fIcon fa fa-code" alt="fa-code"></i></td>
+                                        <td><i class="fIcon fa fa-code-fork" alt="fa-code-fork"></i></td>
+                                        <td><i class="fIcon fa fa-coffee" alt="fa-coffee"></i></td>
+                                        <td><i class="fIcon fa fa-cog" alt="fa-cog"></i></td>
+                                        <td><i class="fIcon fa fa-cogs" alt="fa-cogs"></i></td>
+                                        <td><i class="fIcon fa fa-comment" alt="fa-comment"></i></td>
+                                        <td><i class="fIcon fa fa-comment-o" alt="fa-comment-o"></i></td>
+                                        <td><i class="fIcon fa fa-comments" alt="fa-comments"></i></td>
+                                        <td><i class="fIcon fa fa-comments-o" alt="fa-comments-o"></i></td>
+                                        <td><i class="fIcon fa fa-commenting" alt="fa-commenting"></i></td>
+                                        <td><i class="fIcon fa fa-commenting-o" alt="fa-commenting-o"></i></td>
+                                        <td><i class="fIcon fa fa-compass" alt="fa-compass"></i></td>
+                                        <td><i class="fIcon fa fa-copyright" alt="fa-copyright"></i></td>
+                                        <td><i class="fIcon fa fa-credit-card" alt="fa-credit-card"></i></td>
+                                        <td><i class="fIcon fa fa-credit-card-alt" alt="fa-credit-card-alt"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fIcon fa fa-creative-commons" alt="fa-creative-commons"></i></td>
+                                        <td><i class="fIcon fa fa-crop" alt="fa-crop"></i></td>
+                                        <td><i class="fIcon fa fa-crosshairs" alt="fa-crosshairs"></i></td>
+                                        <td><i class="fIcon fa fa-cube" alt="fa-cube"></i></td>
+                                        <td><i class="fIcon fa fa-cubes" alt="fa-cubes"></i></td>
+                                        <td><i class="fIcon fa fa-cutlery" alt="fa-cutlery"></i></td>
+                                        <td><i class="fIcon fa fa-dashboard" alt="fa-dashboard"></i></td>
+                                        <td><i class="fIcon fa fa-database" alt="fa-database"></i></td>
+                                        <td><i class="fIcon fa fa-deaf" alt="fa-deaf"></i></td>
+                                        <td><i class="fIcon fa fa-deafness" alt="fa-deafness"></i></td>
+                                        <td><i class="fIcon fa fa-desktop" alt="fa-desktop"></i></td>
+                                        <td><i class="fIcon fa fa-diamond" alt="fa-diamond"></i></td>
+                                        <td><i class="fIcon fa fa-dot-circle-o" alt="fa-dot-circle-o"></i></td>
+                                        <td><i class="fIcon fa fa-download" alt="fa-download"></i></td>
+                                        <td><i class="fIcon fa fa-drivers-license" alt="fa-drivers-license"></i></td>
+                                        <td><i class="fIcon fa fa-drivers-license-o" alt="fa-drivers-license-o"></i></td>
+                                        <td><i class="fIcon fa fa-edit" alt="fa-edit"></i></td>
+                                        <td><i class="fIcon fa fa-ellipsis-h" alt="fa-ellipsis-h"></i></td>
+                                        <td><i class="fIcon fa fa-ellipsis-v" alt="fa-ellipsis-v"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fIcon fa fa-envelope" alt="fa-envelope"></i></td>
+                                        <td><i class="fIcon fa fa-envelope-o" alt="fa-envelope-o"></i></td>
+                                        <td><i class="fIcon fa fa-envelope-open" alt="fa-envelope-open"></i></td>
+                                        <td><i class="fIcon fa fa-envelope-open-o" alt="fa-envelope-open-o"></i></td>
+                                        <td><i class="fIcon fa fa-envelope-square" alt="fa-envelope-square"></i></td>
+                                        <td><i class="fIcon fa fa-eraser" alt="fa-eraser"></i></td>
+                                        <td><i class="fIcon fa fa-exchange" alt="fa-exchange"></i></td>
+                                        <td><i class="fIcon fa fa-exclamation" alt="fa-exclamation"></i></td>
+                                        <td><i class="fIcon fa fa-exclamation-circle" alt="fa-exclamation-circle"></i></td>
+                                        <td><i class="fIcon fa fa-exclamation-triangle" alt="fa-exclamation-triangle"></i></td>
+                                        <td><i class="fIcon fa fa-external-link" alt="fa-external-link"></i></td>
+                                        <td><i class="fIcon fa fa-external-link-square" alt="fa-external-link-square"></i></td>
+                                        <td><i class="fIcon fa fa-eye" alt="fa-eye"></i></td>
+                                        <td><i class="fIcon fa fa-eye-slash" alt="fa-eye-slash"></i></td>
+                                        <td><i class="fIcon fa fa-eyedropper" alt="fa-eyedropper"></i></td>
+                                        <td><i class="fIcon fa fa-fax" alt="fa-fax"></i></td>
+                                        <td><i class="fIcon fa fa-female" alt="fa-female"></i></td>
+                                        <td><i class="fIcon fa fa-fighter-jet" alt="fa-fighter-jet"></i></td>
+                                        <td><i class="fIcon fa fa-file-archive-o" alt="fa-file-archive-o"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fIcon fa fa-file-audio-o" alt="fa-file-audio-o"></i></td>
+                                        <td><i class="fIcon fa fa-file-code-o" alt="fa-file-code-o"></i></td>
+                                        <td><i class="fIcon fa fa-file-excel-o" alt="fa-file-excel-o"></i></td>
+
+                                        <td><i class="fIcon fa fa-film" alt="fa-film"></i></td>
+                                        <td><i class="fIcon fa fa-filter" alt="fa-filter"></i></td>
+                                        <td><i class="fIcon fa fa-fire" alt="fa-fire"></i></td>
+                                        <td><i class="fIcon fa fa-fire-extinguisher" alt="fa-fire-extinguisher"></i></td>
+                                        <td><i class="fIcon fa fa-flag" alt="fa-flag"></i></td>
+                                        <td><i class="fIcon fa fa-flag-checkered" alt="fa-flag-checkered"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fIcon fa fa-flag-o" alt="fa-flag-o"></i></td>
+                                        <td><i class="fIcon fa fa-flash" alt="fa-flash"></i></td>
+                                        <td><i class="fIcon fa fa-flask" alt="fa-flask"></i></td>
+                                        <td><i class="fIcon fa fa-folder" alt="fa-folder"></i></td>
+                                        <td><i class="fIcon fa fa-folder-o" alt="fa-folder-o"></i></td>
+                                        <td><i class="fIcon fa fa-folder-open" alt="fa-folder-open"></i></td>
+                                        <td><i class="fIcon fa fa-folder-open-o" alt="fa-folder-open-o"></i></td>
+                                        <td><i class="fIcon fa fa-frown-o" alt="fa-frown-o"></i></td>
+                                        <td><i class="fIcon fa fa-futbol-o" alt="fa-futbol-o"></i></td>
+                                        <td><i class="fIcon fa fa-gamepad" alt="fa-gamepad"></i></td>
+                                        <td><i class="fIcon fa fa-gavel" alt="fa-gavel"></i></td>
+                                        <td><i class="fIcon fa fa-gear" alt="fa-gear"></i></td>
+                                        <td><i class="fIcon fa fa-gears" alt="fa-gears"></i></td>
+                                        <td><i class="fIcon fa fa-genderless" alt="fa-genderless"></i></td>
+                                        <td><i class="fIcon fa fa-gift" alt="fa-gift"></i></td>
+                                        <td><i class="fIcon fa fa-glass" alt="fa-glass"></i></td>
+                                        <td><i class="fIcon fa fa-globe" alt="fa-globe"></i></td>
+                                        <td><i class="fIcon fa fa-graduation-cap" alt="fa-graduation-cap"></i></td>
+                                        <td><i class="fIcon fa fa-group" alt="fa-group"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fIcon fa fa-hard-of-hearing" alt="fa-hard-of-hearing"></i></td>
+                                        <td><i class="fIcon fa fa-hdd-o" alt="fa-hdd-o"></i></td>
+                                        <td><i class="fIcon fa fa-handshake-o" alt="fa-handshake-o"></i></td>
+                                        <td><i class="fIcon fa fa-hashtag" alt="fa-hashtag"></i></td>
+                                        <td><i class="fIcon fa fa-headphones" alt="fa-headphones"></i></td>
+                                        <td><i class="fIcon fa fa-heart" alt="fa-heart"></i></td>
+                                        <td><i class="fIcon fa fa-heart-o" alt="fa-heart-o"></i></td>
+                                        <td><i class="fIcon fa fa-heartbeat" alt="fa-heartbeat"></i></td>
+                                        <td><i class="fIcon fa fa-history" alt="fa-history"></i></td>
+                                        <td><i class="fIcon fa fa-home" alt="fa-home"></i></td>
+                                        <td><i class="fIcon fa fa-hotel" alt="fa-hotel"></i></td>
+                                        <td><i class="fIcon fa fa-hourglass" alt="fa-hourglass"></i></td>
+                                        <td><i class="fIcon fa fa-hourglass-1" alt="fa-hourglass-1"></i></td>
+                                        <td><i class="fIcon fa fa-hourglass-2" alt="fa-hourglass-2"></i></td>
+                                        <td><i class="fIcon fa fa-hourglass-3" alt="fa-hourglass-3"></i></td>
+                                        <td><i class="fIcon fa fa-hourglass-end" alt="fa-hourglass-end"></i></td>
+                                        <td><i class="fIcon fa fa-hourglass-half" alt="fa-hourglass-half"></i></td>
+                                        <td><i class="fIcon fa fa-hourglass-o" alt="fa-hourglass-o"></i></td>
+                                        <td><i class="fIcon fa fa-hourglass-start" alt="fa-hourglass-start"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fIcon fa fa-i-cursor" alt="fa-i-cursor"></i></td>
+                                        <td><i class="fIcon fa fa-id-badge" alt="fa-id-badge"></i></td>
+                                        <td><i class="fIcon fa fa-id-card" alt="fa-id-card"></i></td>
+                                        <td><i class="fIcon fa fa-id-card-o" alt="fa-id-card-o"></i></td>
+                                        <td><i class="fIcon fa fa-image" alt="fa-image"></i></td>
+                                        <td><i class="fIcon fa fa-inbox" alt="fa-inbox"></i></td>
+                                        <td><i class="fIcon fa fa-industry" alt="fa-industry"></i></td>
+                                        <td><i class="fIcon fa fa-info" alt="fa-info"></i></td>
+                                        <td><i class="fIcon fa fa-info-circle" alt="fa-info-circle"></i></td>
+                                        <td><i class="fIcon fa fa-institution" alt="fa-institution"></i></td>
+                                        <td><i class="fIcon fa fa-key" alt="fa-key"></i></td>
+                                        <td><i class="fIcon fa fa-keyboard-o" alt="fa-keyboard-o"></i></td>
+                                        <td><i class="fIcon fa fa-language" alt="fa-language"></i></td>
+                                        <td><i class="fIcon fa fa-laptop" alt="fa-laptop"></i></td>
+                                        <td><i class="fIcon fa fa-leaf" alt="fa-leaf"></i></td>
+                                        <td><i class="fIcon fa fa-legal" alt="fa-legal"></i></td>
+                                        <td><i class="fIcon fa fa-lemon-o" alt="fa-lemon-o"></i></td>
+                                        <td><i class="fIcon fa fa-level-down" alt="fa-level-down"></i></td>
+                                        <td><i class="fIcon fa fa-level-up" alt="fa-level-up"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fIcon fa fa-life-bouy" alt="fa-life-bouy"></i></td>
+                                        <td><i class="fIcon fa fa-life-buoy" alt="fa-life-buoy"></i></td>
+                                        <td><i class="fIcon fa fa-life-ring" alt="fa-life-ring"></i></td>
+                                        <td><i class="fIcon fa fa-life-saver" alt="fa-life-saver"></i></td>
+                                        <td><i class="fIcon fa fa-lightbulb-o" alt="fa-lightbulb-o"></i></td>
+                                        <td><i class="fIcon fa fa-line-chart" alt="fa-line-chart"></i></td>
+                                        <td><i class="fIcon fa fa-location-arrow" alt="fa-location-arrow"></i></td>
+                                        <td><i class="fIcon fa fa-lock" alt="fa-lock"></i></td>
+                                        <td><i class="fIcon fa fa-low-vision" alt="fa-low-vision"></i></td>
+                                        <td><i class="fIcon fa fa-magic" alt="fa-magic"></i></td>
+                                        <td><i class="fIcon fa fa-magnet" alt="fa-magnet"></i></td>
+                                        <td><i class="fIcon fa fa-mail-forward" alt="fa-mail-forward"></i></td>
+                                        <td><i class="fIcon fa fa-mail-reply" alt="fa-mail-reply"></i></td>
+                                        <td><i class="fIcon fa fa-mail-reply-all" alt="fa-mail-reply-all"></i></td>
+                                        <td><i class="fIcon fa fa-male" alt="fa-male"></i></td>
+                                        <td><i class="fIcon fa fa-map" alt="fa-map"></i></td>
+                                        <td><i class="fIcon fa fa-map-o" alt="fa-map-o"></i></td>
+                                        <td><i class="fIcon fa fa-map-pin" alt="fa-map-pin"></i></td>
+                                        <td><i class="fIcon fa fa-map-signs" alt="fa-map-signs"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fIcon fa fa-map-marker" alt="fa-map-marker"></i></td>
+                                        <td><i class="fIcon fa fa-meh-o" alt="fa-meh-o"></i></td>
+                                        <td><i class="fIcon fa fa-microchip" alt="fa-microchip"></i></td>
+                                        <td><i class="fIcon fa fa-microphone" alt="fa-microphone"></i></td>
+                                        <td><i class="fIcon fa fa-microphone-slash" alt="fa-microphone-slash"></i></td>
+                                        <td><i class="fIcon fa fa-minus" alt="fa-minus"></i></td>
+                                        <td><i class="fIcon fa fa-minus-circle" alt="fa-minus-circle"></i></td>
+                                        <td><i class="fIcon fa fa-minus-square" alt="fa-minus-square"></i></td>
+                                        <td><i class="fIcon fa fa-minus-square-o" alt="fa-minus-square-o"></i></td>
+                                        <td><i class="fIcon fa fa-mobile" alt="fa-mobile"></i></td>
+                                        <td><i class="fIcon fa fa-mobile-phone" alt="fa-mobile-phone"></i></td>
+                                        <td><i class="fIcon fa fa-money" alt="fa-money"></i></td>
+                                        <td><i class="fIcon fa fa-moon-o" alt="fa-moon-o"></i></td>
+                                        <td><i class="fIcon fa fa-mortar-board" alt="fa-mortar-board"></i></td>
+                                        <td><i class="fIcon fa fa-motorcycle" alt="fa-motorcycle"></i></td>
+                                        <td><i class="fIcon fa fa-mouse-pointer" alt="fa-mouse-pointer"></i></td>
+                                        <td><i class="fIcon fa fa-musicfa-music"></i></td>
+                                        <td><i class="fIcon fa fa-naviconfa-navicon"></i></td>
+                                        <td><i class="fIcon fa fa-newspaper-ofa-newspaper-o"></i></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <labe>Color</labe>
+                                <input type="color" value="#000000" onchange="ChangeColor()">
+
+                                <labe>Size</labe>
+                                <input type="number" value="12" onchange="ChangeSize()">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="selectedIcon"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="GetSelectedHTML()">Select</button>
                 </div>
             </div>
         </div>
@@ -114,6 +421,38 @@
         $("#txtResult").val("");
         $("#txtField").val("");
         $("#LstLayer").val("");
+    }
+
+
+
+    $(document).on('click', '.fIcon', function() {
+        $("#tblIcon tr td").css('border', 'none')
+        var selectedHTML = this.outerHTML;
+        $("#selectedIcon").empty();
+        selectedHTML = $(selectedHTML)[0]
+        selectedHTML.setAttribute('id', 'selected');
+        $("#selectedIcon").append(selectedHTML);
+        $($(this).parent("td")[0]).css('border', '1px solid');
+    })
+
+    function ChangeColor() {
+        var selectedColor = event.target.value;
+        var selectedIcon = $("#selectedIcon").html();
+        if (selectedIcon) {
+            $("#selected").css('color', selectedColor);
+        }
+    }
+
+    function ChangeSize() {
+        var selectedSize = event.target.value;
+        var selectedIcon = $("#selectedIcon").html();
+        if (selectedIcon) {
+            $("#selected").css('font-size', selectedSize + "px");
+        }
+    }
+
+    function GetSelectedHTML() {
+        alert($("#selected")[0].outerHTML);
     }
 </script>
 
