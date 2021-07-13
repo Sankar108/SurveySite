@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SurveyBaba | Dashboard</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+
+    <style>
+        .pricing-card {
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            text-align: center;
+            -webkit-transition: all 0.6s;
+            transition: all 0.6s;
+        }
+        
+        .pricing-card.pricing-card-highlighted {
+            box-shadow: 0 2px 40px 0 rgb(205 205 205 / 55%);
+        }
+        
+        .pricing-card .card-body {
+            padding-top: 55px;
+            padding-bottom: 62px;
+        }
+        
+        .pricing-card:hover {
+            box-shadow: 0 2px 40px 0 rgb(205 205 205 / 55%);
+            transform: translateY(-10px);
+        }
+        
+        .card-body {
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            min-height: 1px;
+            padding: 1.25rem;
+        }
+        
+        .pricing-btn:hover {
+            box-shadow: 0 3px 0 0 #b7013d;
+        }
+        
+        .pricing-btn:active {
+            -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+            box-shadow: none;
+        }
+        
+        .pricing-btn {
+            color: #000;
+            font-size: 16px;
+            font-weight: bold;
+            width: 145px;
+            height: 45px;
+            border-radius: 22.5px;
+            transition: all 0.4s;
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: center;
+            margin-top: 25px;
+        }
+        
+        .lstOptions {
+            float: left;
+            text-align: left;
+            font-size: 0.9em;
+            margin-top: 15px;
+        }
+        
+        .lstOptions li {
+            padding-top: 10px;
+        }
+    </style>
+
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+        <!-- topbar-------------------------------- -->
+        <div id="mySidenav" class="sidenav">
+            <img id="profileimg" src="Images/profile.png" alt="Profile">
+            <div class="dropdown submenu">
+                <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true">
+                    Rajbir
+                </button>
+                <div class="dropdown-menu">
+                    <a class="_dropdown-item" href="UserProfile.html">Administrator</a>
+                </div>
+            </div>
+            <div id="mobilemenu">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Product</a>
+                <a href="#">Solution</a>
+                <a href="#">Resources</a>
+                <a href="Price.html">Plan & Pricing</a>
+            </div>
+        </div>
+        <span id="toggleMenu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+        <div class="fixed_header">
+            <div id="topbar">
+                <a href="index.html">
+                    <img src="images/surveylogo.jpeg" id="surveylogo">
+                </a>
+                <nav>
+                    <ul class="menu-list">
+                        <li class="menu-list-item active">
+                            <div class="btn-group">
+                                <a href="#" class="dropdown-toggle mainmenu" data-toggle="dropdown">Product </a>
+                                <div class="dropdown-menu">
+                                    <table class="tblmenu">
+                                        <tr>
+                                            <td class="iconCell"><i class="fa fa-check-circle menuIcon"></i></td>
+                                            <td><a class="dropdown-item" href="#">Surveybaba.com – (SAS based  Survey Platform)</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="iconCell"><i class="fa fa-bars menuIcon"></i></td>
+                                            <td><a class="dropdown-item" href="#">Onsite Deployment of  Survey Platform – (Rental)
+                                            </a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="iconCell"><i class="fa fa-sticky-note menuIcon"></i></td>
+                                            <td><a class="dropdown-item" href="#">GIS Enabled Survey Project Implementation</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="iconCell"><i class="fa fa-sticky-note menuIcon"></i></td>
+                                            <td><a class="dropdown-item" href="#">Enterprise GIS Applications
+                                            </a></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-list-item">
+                            <div class="btn-group">
+                                <a href="#" class="dropdown-toggle mainmenu" data-toggle="dropdown">Solution</a>
+                                <div class="dropdown-menu">
+                                    <table class="tblmenu">
+                                        <tr>
+                                            <td class="iconCell"><i class="fa fa-comment menuIcon"></i></td>
+                                            <td><a class="dropdown-item" href="#">Forms</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="iconCell"><i class="fa fa-map menuIcon"></i></td>
+                                            <td>
+                                                <a class="dropdown-item" href="#">GIS Survey</a></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-list-item">
+                            <a href="#" class="dropdown-toggle mainmenu" data-toggle="dropdown">
+                                Resources
+                            </a>
+                            <div class="dropdown-menu">
+                                <table class="tblmenu">
+                                    <tr>
+                                        <td class="iconCell"><i class="fa fa-sticky-note menuIcon"></i></td>
+                                        <td><a class="dropdown-item" href="#">Templates</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="iconCell"><i class="fa fa-users menuIcon"></i></td>
+                                        <td>
+                                            <a class="dropdown-item" href="#">User Guides</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="menu-list-item">
+                            <a href="#" class="mainmenu" data-toggle="dropdown">Plan & Pricing</a>
+                        </li>
+
+                        <li class="menu-list-item info float-right m-r-10">
+                            <a href="#" class="mainmenu">En</a>
+                        </li>
+                        <li class="menu-list-item float-right">
+                            <a href="#" class="mainmenu">Sign up</a>
+                        </li>
+                        <li class="menu-list-item float-right">
+                            <a href="#" class="mainmenu">Login</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pageContent">
+        <h1 class="w-100 text-center">Choose a plan that works for you</h1>
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <div class="card pricing-card">
+                    <h4 class="text-bold">TEAM ADVANTAGE</h4>
+                    <h2 class="mt-2">Rs.<b>1550</b> <small>/user/month</small></h2>
+                    <small>Starting at 3 users, billed annually</small>
+                    <a href="#" class="btn btn-primary pricing-btn">FREE</a>
+                    <ul class="lstOptions">
+                        <li>Survey sharing with fine control over who can view and edit</li>
+                        <li>Gather comments all in one place</li>
+                        <li>Let team members analyze, filter and export results</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card pricing-card">
+                    <h4 class="text-bold">TEAM PREMIER</h4>
+                    <h2 class="mt-2">Rs.<b>3800</b> <small>/user/month</small></h2>
+                    <small>Starting at 3 users, billed annually</small>
+                    <a href="#" class="btn btn-primary pricing-btn">PREMIUM</a>
+                    <ul class="lstOptions">
+                        <li>Survey sharing with fine control over who can view and edit</li>
+                        <li>Gather comments all in one place</li>
+                        <li>Let team members analyze, filter and export results</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card pricing-card">
+                    <h4 class="text-bold">ENTERPRISE</h4>
+                    <h2 class="mt-2">Rs.<b>5400</b> <small>/user/month</small></h2>
+                    <small>Starting at 3 users, billed annually</small>
+                    <a href="#" class="btn btn-primary pricing-btn">ENTERPRISE</a>
+                    <ul class="lstOptions">
+                        <li>Survey sharing with fine control over who can view and edit</li>
+                        <li>Gather comments all in one place</li>
+                        <li>Let team members analyze, filter and export results</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge('uibutton', $.ui.button)
+    </script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <script src="script/common.js"></script>
+</body>
+
+<script>
+</script>
+
+</html>
