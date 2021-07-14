@@ -61,8 +61,9 @@ input[type="radio"]:checked+label::before {
 }
 
 .LogPanel {
-    background-color: #eaecec;
+    background-color: #fdf8f1;
     font-size: 0.9rem;
+    box-shadow: 0 0 3px rgb(184, 180, 180);
 }
 
 .or-divider {
@@ -142,4 +143,17 @@ footer {
 
 .footerSubmenu li:hover {
     color: white;
+}
+
+body {
+    font-family: "Segoe UI Webfont", -apple-system, "Helvetica Neue", "Lucida Grande", "Roboto", "Ebrima", "Nirmala UI", "Gadugi", "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", "Tunga", "Lao UI", "Raavi", "Iskoola Pota", "Latha", "Leelawadee", "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+}
+
+.pageContent {
+    padding-top: 100px;
+    min-height: 600px;
+}
+
+.mt-3 {
+    margin-top: 15px;
 }

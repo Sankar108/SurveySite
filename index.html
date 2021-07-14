@@ -52,7 +52,6 @@
                 </a>
 
                 <nav>
-                    <label style="position: absolute;" id="lblY">0</label>
                     <ul class="menu-list">
                         <li class="menu-list-item active">
                             <div class="btn-group">
@@ -630,8 +629,6 @@
 
         $(document).scroll(function() {
             var y = $(this).scrollTop();
-            $("#lblY").text(y);
-
             if (y > 300) {
                 $('#HRSurvey').fadeIn(5000);
             }

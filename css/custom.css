@@ -271,6 +271,11 @@
         color: yellow
     }
     
+    .mainmenu.active {
+        background: orange;
+        box-shadow: 0 0 0 2px white;
+    }
+    
     @media(min-width: 480px) {
         .menu-list-item {
             display: inline-block;
@@ -509,7 +514,7 @@
             border: none;
         }
         .pageContent {
-            padding-top: 0px;
+            padding-top: 0px !important;
         }
     }
     
@@ -632,12 +637,4 @@
     
     .section2_box2 img {
         max-width: 100%;
-    }
-    
-    body {
-        font-family: "Segoe UI Webfont", -apple-system, "Helvetica Neue", "Lucida Grande", "Roboto", "Ebrima", "Nirmala UI", "Gadugi", "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", "Tunga", "Lao UI", "Raavi", "Iskoola Pota", "Latha", "Leelawadee", "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
-    }
-    
-    .pageContent {
-        padding-top: 100px;
     }
