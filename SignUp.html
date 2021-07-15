@@ -88,9 +88,12 @@
                                             <td><a class="dropdown-item" href="#">Forms</a></td>
                                         </tr>
                                         <tr>
-                                            <td class="iconCell"><i class="fa fa-map menuIcon"></i></td>
+                                            <td class="iconCell">
+                                                <i class="fa fa-map menuIcon"></i>
+                                            </td>
                                             <td>
-                                                <a class="dropdown-item" href="#">GIS Survey</a></td>
+                                                <a class="dropdown-item" href="#">GIS Survey</a>
+                                            </td>
                                         </tr>
                                     </table>
                                 </div>
@@ -122,10 +125,10 @@
                             <a href="#" class="mainmenu">En</a>
                         </li>
                         <li class="menu-list-item float-right">
-                            <a href="SignUp.html" class="mainmenu">Sign up</a>
+                            <a href="SignUp.html" class="mainmenu active">Sign up</a>
                         </li>
                         <li class="menu-list-item float-right">
-                            <a href="Login.html" class="mainmenu active">Login</a>
+                            <a href="Login.html" class="mainmenu">Login</a>
                         </li>
                     </ul>
                 </nav>
@@ -135,59 +138,47 @@
 
     <div class="container pageContent">
         <div class="row">
+            <div class="col-md-3"></div>
             <div class="col-md-6">
-                <h2>Welcome Back!</h2>
-                <h5>Login with your Surveybaba account</h5>
-                <div class="LogPanel p-4">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label>Email Address/ Username</label>
-                                <input type="text" class="form-control" />
+                <div class="card text-center">
+                    <h2>Create a FREE account</h2>
+                    <p>Already have an account ? <a class="text-bold ml-3" href="Login.html">Login</a></p>
+                    <div class="card-body text-center">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" placeholder="Username" />
                             </div>
-                        </div>
-                        <div class="col-md-12 mt-1">
-                            <div class="form-group">
-                                <label>Password</label>
-                                <input type="text" class="form-control" />
+                            <div class="col-md-12">
+                                <input type="password" class="form-control" placeholder="Password" />
                             </div>
-                        </div>
-                        <div class="col-md-12 mt-1">
-                            <div class="icheck-default d-inline">
-                                <input type="checkbox" class="optinput" id="chk100">
-                                <label class="lblopt" for="chk100">Keep me Logged in </label>
+                            <div class="col-md-12">
+                                <input type="email" class="form-control" placeholder="Email" />
                             </div>
-                        </div>
-                        <div class="col-md-12 mt-1">
-                            <a href="#">Forgot username or password ?</a>
-                        </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="First name" />
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Last name" />
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <button type="button" class="btn btn-warning w-100">Create Account</button>
+                            </div>
 
-                        <div class="col-md-12 mt-1">
-                            <button class="btn btn-warning float-right"> Log in</button>
+                            <span class="w-100 text-center mt-3"><b>OR</b> </span>
+                            <small class="w-100 text-center mt-3"> Sign up with</small>
+
+                            <div class="wds-container">
+                                <a class="social-icon" href="#"><img alt="Google" class="signin-image" src="https://prod.smassets.net/assets/cms/cc/app/2.110.0/images/google-logo.svg"></a>
+                                <a class="social-icon" href="#"><img alt="Facebook" class="signin-image" src="https://prod.smassets.net/assets/cms/cc/app/2.110.0/images/facebook-logo.svg"></a>
+                                <a class="social-icon" href="#"><img alt="LinkedIn" class="signin-image" src="https://prod.smassets.net/assets/cms/cc/app/2.110.0/images/linkedin-logo.svg"></a>
+                                <a class="social-icon" href="#"><img alt="Office 365" class="signin-image" src="https://prod.smassets.net/assets/cms/cc/app/2.110.0/images/office-365-logo.svg"></a>
+                                <a class="social-icon" href="#"><img alt="Office 365" class="signin-image" src="https://prod.smassets.net/assets/userweb/userweb/331.1.0/assets/images/apple.svg"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-1">
-                <div class="vl">
-                    <span class="vl-innertext">or</span>
-                </div>
-            </div>
-            <div class="col-md-5">
-                <div class="col">
-                    <a href="#" class="fb btnSocial">
-                        <i class="fa fa-facebook fa-fw"></i> Login with Facebook
-                    </a>
-                    <a href="#" class="twitter btnSocial">
-                        <i class="fa fa-twitter fa-fw"></i> Login with Twitter
-                    </a>
-                    <a href="#" class="google btnSocial"><i class="fa fa-google fa-fw">
-                      </i> Login with Google+
-                    </a>
-                    <br/>
-                    <a href="Signup.html" class="text-bold mt-5">Create new Account</a>
-                </div>
-            </div>
+            <div class="col-md-3"></div>
         </div>
     </div>
 
